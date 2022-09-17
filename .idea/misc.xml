@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/diler/AndroidStudioProjects/FafirePOS/Retrofit_Room/app/src/main/res/layout/activity_department_list.xml" value="0.2" />
+        <entry key="..\:/Users/diler/AndroidStudioProjects/FafirePOS/Retrofit_Room/app/src/main/res/layout/activity_department_res.xml" value="0.259375" />
         <entry key="..\:/Users/diler/AndroidStudioProjects/FafirePOS/Retrofit_Room/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/Users/diler/AndroidStudioProjects/FafirePOS/Retrofit_Room/app/src/main/res/layout/departmentitem.xml" value="0.259375" />
         <entry key="..\:/Users/diler/AndroidStudioProjects/Retrofit_Room/app/src/main/res/layout/activity_main.xml" value="0.25462962962962965" />
       </map>
     </option>

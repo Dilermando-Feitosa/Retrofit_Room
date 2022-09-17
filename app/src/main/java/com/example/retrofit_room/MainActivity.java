@@ -3,18 +3,14 @@ package com.example.retrofit_room;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Window;
 import android.widget.Toast;
 
-import java.util.List;
-
-import model.Department;
-import model.DepartmentPost;
+import com.example.retrofit_room.model.Department;
+import com.example.retrofit_room.model.DepartmentPost;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import service.DepartmentService;
+import com.example.retrofit_room.service.DepartmentService;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,25 +26,7 @@ public class MainActivity extends AppCompatActivity {
         //createDepartment(service);
         getDepartmentById(service);
 
-        service.getAllDepartments().enqueue(new Callback<List<Department>>() {
-            @Override
-            public void onResponse(Call<List<Department>> call, Response<List<Department>> response) {
-                List<Department> lista = response.body();
-
-                for (Department item : lista
-                ) {
-                    Log.i(">>>", item.getName());
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Department>> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Falha na Request!", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
-
-    ;
+    };
 
     private void createDepartment(DepartmentService service) {
         DepartmentPost dto = new DepartmentPost();

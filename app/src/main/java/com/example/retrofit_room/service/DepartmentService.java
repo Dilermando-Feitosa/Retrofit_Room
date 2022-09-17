@@ -1,9 +1,9 @@
-package service;
+package com.example.retrofit_room.service;
 
 import java.util.List;
 
-import model.Department;
-import model.DepartmentPost;
+import com.example.retrofit_room.model.Department;
+import com.example.retrofit_room.model.DepartmentPost;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;

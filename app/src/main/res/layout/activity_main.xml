@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edIdDepart"
-        android:layout_width="290dp"
-        android:layout_height="48dp"
+        android:id="@+id/etIdDepartment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number|textPersonName"
         android:text="Id Department"
@@ -19,18 +20,42 @@
 
     <Button
         android:id="@+id/btDepart"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <Button
         android:id="@+id/btProfessor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Professor"
+        app:layout_constraintBottom_toTopOf="@+id/btDepartment"
+        app:layout_constraintTop_toBottomOf="@id/btAllocation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <Button
+        android:id="@+id/btAllocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Allocation"
+        app:layout_constraintBottom_toTopOf="@+id/btProfessor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btDepart" />
+
+    <Button
+        android:id="@+id/btDepartment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btAllocation"
+        app:layout_constraintBottom_toTopOf="@+id/btCourse"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="263dp" />
 
@@ -41,6 +66,7 @@
         android:text="Course"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/btProfessor"
+        app:layout_constraintTop_toBottomOf="@id/btDepartment"
         tools:layout_editor_absoluteY="341dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

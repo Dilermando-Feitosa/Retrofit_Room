@@ -2,7 +2,7 @@ package com.example.retrofit_room;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import service.DepartmentService;
+import com.example.retrofit_room.service.DepartmentService;
 
 public class RetrofitConfig {
 

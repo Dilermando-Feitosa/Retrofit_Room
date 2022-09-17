@@ -1,4 +1,4 @@
-package model;
+package com.example.retrofit_room.model;
 
 import java.util.List;
 
